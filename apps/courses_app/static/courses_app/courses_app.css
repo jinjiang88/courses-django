@@ -1,0 +1,25 @@
+.wrapper{
+  width: 970px;
+  min-height: 500px;
+}
+.header{
+  text-align: center;
+}
+#button{
+  margin-left: 200px;
+}
+.table{
+  margin-left: 250px;
+}
+#tableOne{
+  border: 1px solid black;
+  width: 500px;
+}
+th{
+  background-color: #CCCCCC;
+}
+tr:nth-child(even){background-color: #f2f2f2}
+th, td {
+    text-align: left;
+    padding: 5px;
+}

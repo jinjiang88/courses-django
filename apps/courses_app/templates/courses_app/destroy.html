@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'courses_app/coursesTwo_app.css' %}"media="screen" title="no title"  charset="utf-8">    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Are you sure you want to delete the following course?</h1>
+    <table>
+      <tr>
+        <th>Course Name</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>{{name}}</td>
+        <td>{{description}}</td>
+      </tr>
+    </table>
+    <div class="selection">
+      {% csrf_token %}
+      <form class="left" action="/" method="post">
+        {% csrf_token %}
+        <input type="submit" name="" value="No">
+      </form>
+      {% csrf_token %}
+      <form class="right" action="/delete/{{cid}}" method="post">
+        {% csrf_token %}
+        <input type="submit" name="" value="Yes! I want to delete this">
+      </form>
+    </div>
+  </body>
+</html>

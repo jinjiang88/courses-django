@@ -1,0 +1,21 @@
+.selection{
+  width: 750px;
+  height: 100px;
+  display: inline-block;
+}
+.left{
+  display: inline-block;
+  width: 100px;
+}
+.right{
+  display: inline-block;
+  width: 100px;
+}
+th{
+  background-color: #CCCCCC;
+}
+tr:nth-child(even){background-color: #f2f2f2}
+th, td {
+    text-align: left;
+    padding: 5px;
+}
